@@ -4,6 +4,9 @@ import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ContactComponent } from './contact/contact.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { TypescComponent } from './typesc/typesc.component'
+
 
 
 const routes: Routes = [
@@ -11,6 +14,8 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'product', component: ProductComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'directives', component: DirectivesComponent},
+  {path: 'typescript', component: TypescComponent},
   {path: '**', component: PagenotfoundComponent}
 ];
 

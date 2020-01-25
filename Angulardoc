@@ -1,0 +1,117 @@
+component
+==================
+
+import {Component} from '@angular/core'
+
+@Component({                                    //decorater starts with @
+	selector: 'app-directive',  //or         how to use  <app-directive>
+	selector: '[app-directive]'  //or                    <div app-directive></div>
+	selector: '.app-directive'                           <div class='app-directive'></div>
+
+	templateUrl: '',
+	template:``,
+
+	styleUrls: ['',''],
+	style:``
+})
+
+
+
+Data binding  = communication
+===============================
+
+                             type script            =========    string interpolation {{data}},  propert binding [property]='data'   ===========>      html
+
+                             html                   =========     (event)="expression" ==============> ts
+
+
+                             twoway data binding
+
+                              [(ngModel)]= 'data'
+                             
+                             string interpolation
+                             ======================
+
+                              i am {{ name }} from {{ location }} {{ getServerData() }}
+
+
+                              getServerData(){
+                                 return this.name;
+                              }
+
+                              property binding
+                              ======================
+
+                              disabled
+
+                              allowServer = true;
+
+                              setTimeout( () => {
+                                   this.allowServer = false;
+                              }, 1000)
+
+                              [disabled] = 'allowServer'
+
+
+
+                              property binding vs property binding
+
+
+                              [innerText]= "allowServer"     {{allowServer}}
+
+
+
+                              event binding
+                              ==============
+
+                              server = 'server stop';
+
+                              this.server = 'server start';
+
+                              (click)="onCreate()"
+
+
+                              serrver starts
+
+
+                              
+
+                              enterData = ''
+
+                              onUpdateData(event){
+                                    this.enterData = event.target.value;
+                              }
+
+                              <input (input)= "onUpdateData(event)"  />
+
+                              <p></p>
+
+
+                              two way data binding
+                              ====================0
+
+                              [(ngModel)] = "serverName"
+                               <input [(ngModel)] = "serverName" />
+
+
+                              import { FormsModule } from "@angular/forms"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

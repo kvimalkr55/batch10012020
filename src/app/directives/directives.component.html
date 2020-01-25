@@ -1,0 +1,36 @@
+<p>directives works!</p>
+
+<p>Structural directive</p>
+
+<p *ngIf="true">
+    Expression is true and ngIf is true.
+    This paragraph is in the DOM.
+  </p>
+  <p *ngIf="false">
+    Expression is false and ngIf is false.
+    This paragraph is not in the DOM.
+  </p>
+
+  <p>
+    The ngIf directive doesn't hide elements with CSS.
+    It adds and removes them physically from the DOM.
+     Confirm that fact using browser developer tools
+    to inspect the DOM.
+  </p>
+
+  <ul>
+    <li *ngFor="let hero of heroes">{{hero}}</li>
+  </ul>
+
+
+<div [ngSwitch]="emotion">
+
+        <div class="text-warning" *ngSwitchCase="'angray'"> angray </div>
+        <div class="text-success" *ngSwitchCase="'happy'"> happy </div>
+        <div class="text-success" *ngSwitchDefault > i am defaut </div>        
+</div>
+
+<input (keypress)= "onUpdateData($event)"  />
+
+<input [(ngModel)]="enterData"  />
+<p>{{enterData}}</p>
