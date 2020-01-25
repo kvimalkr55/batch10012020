@@ -1,1 +1,24 @@
-<p>about works!</p>
+<h1 [ngStyle]="{'color' : name == 'on' ? 'green' : 'red' }"> i am   from   {{name}}</h1>
+
+<button (click)="getServer()">Click</button>
+
+
+<h1 *ngIf="1">hi i am paragraph true</h1>
+
+<h1 *ngIf="0">hi i am paragraph false</h1>
+
+<div class="row m-0">
+
+    <div class="col-md-3 shadow" *ngFor="let items of usersDetails; let i = index;" >
+        <div class="card" >
+
+            <img class="card-img-top" [src]="items.image" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">{{items.name}}</h4>
+              <p class="card-text">{{items.description}}</p>
+              <a href="#" class="btn btn-primary">See Profile {{i+1}}</a>
+            </div>
+          </div>
+    </div>
+
+</div>
