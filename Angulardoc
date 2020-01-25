@@ -39,9 +39,9 @@ Data binding  = communication
                                  return this.name;
                               }
 
-                              property binding
+                              property binding 
                               ======================
-
+                              we can write expression in it [disabled]="username == ''"
                               disabled
 
                               allowServer = true;
@@ -95,6 +95,48 @@ Data binding  = communication
 
 
                               import { FormsModule } from "@angular/forms"
+
+
+
+directives
+==================
+
+
+directives are instructions to dom
+
+
+<p turngreen>text </p>
+
+@Directive({
+	selector: 'turngreen' 
+})
+
+export class turngreenDirective{
+	
+}
+
+
+
+built in directives
+====================
+
+strutural directive
+
+*ngIf * incidates 
+
+in this we can write expression
+
+
+attribute directive
+
+[ngClass] = "{'background': true}"
+
+[ngStyle] = "{'background': 'red'}"
+
+
+
+
+
 
 
 
