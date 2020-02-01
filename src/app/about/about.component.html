@@ -9,12 +9,12 @@
 
 <div class="row m-0">
 
-    <div class="col-md-3 shadow" *ngFor="let items of usersDetails; let i = index;" >
+    <div  [ngClass]="{'col-md-3 shadow': true, 'bgGender': items.gender =='M' ? true : false }" *ngFor="let items of usersDetails; let i = index;" >
         <div class="card" >
 
             <img class="card-img-top" [src]="items.image" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">{{items.name}}</h4>
+              <h4 class="card-title" [ngStyle]="{'color': items.color}">{{items.name}}</h4>
               <p class="card-text">{{items.description}}</p>
               <a href="#" class="btn btn-primary">See Profile {{i+1}}</a>
             </div>
