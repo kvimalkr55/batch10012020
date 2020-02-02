@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { MyOwnColorDirective } from './my-own-color.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AboutComponent,
     ProductComponent,
     ContactComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    MyOwnColorDirective
   ],
   imports: [
     BrowserModule,

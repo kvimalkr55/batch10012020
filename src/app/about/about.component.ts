@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
  name;
+ colorName;
+ flag = false;
+ colors = [
+   'blue','red', 'green'
+ ];
  usersDetails = [
    {
      color:'green',
@@ -48,6 +53,11 @@ export class AboutComponent implements OnInit {
       return this.name = 'off';
     }
       return this.name = 'on';
+  }
+
+  colorChange(data){
+    alert(data);
+    this.colorName = data;
   }
 
 }

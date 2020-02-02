@@ -24,3 +24,20 @@
 </div>
 
 
+<button *ngFor="let color of colors" (click)="colorChange(color)"   [ngStyle]="{'background': colorName}">{{color}}</button>
+
+
+<h1 appMyOwnColor> hihih</h1>
+
+<!-- pipes -->
+
+<!-- uppercase -->
+<h1> {{'india pvt lmtd' | uppercase}}</h1>
+<!-- lowercase -->
+<h1> {{'india pvt lmtd' | lowercase}}</h1>
+<!-- decimal -->
+<!-- <h1> {{2000.2222 | 0:2}}</h1> -->
+<!-- json -->
+<!-- date -->
+<!-- currency -->
+
