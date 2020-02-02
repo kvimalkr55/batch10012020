@@ -6,6 +6,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ContactComponent } from './contact/contact.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { TypescComponent } from './typesc/typesc.component'
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component'
 
 
 
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'directives', component: DirectivesComponent},
   {path: 'typescript', component: TypescComponent},
+  {path: 'forms', component:  ReactiveFormsComponent},
+ 
   {path: '**', component: PagenotfoundComponent}
 ];
 
